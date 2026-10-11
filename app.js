@@ -14,23 +14,23 @@ function validornot(){
     }
 
     if(guess==n){
-        result = "You won";
+        result = "You won 😍";
         document.getElementById("txt001").disabled = true;
         document.getElementById("txt001").value=n;
         gameOver = true;
     }else if (count==5) {
-        result= "You lost! Your attempts are finished! Number is "+n;
+        result= "You lost! ☹️ Your attempts are finished! Number is "+n;
         document.getElementById("txt001").disabled = true;
         gameOver = true;
     }else if(guess>n){
-        result = "You lost! try again. Your number is higher";
+        result = "You lost! try again 😥. Your number is higher";
         document.getElementById("txt001").value="";
     }else{
-        result = "You lost! try again. Your number is lower";
+        result = "You lost! try again 😥. Your number is lower";
         document.getElementById("txt001").value="";
     }
     document.getElementById("h3001").innerText=result;
     document.getElementById("txt001").focus();
-    document.getElementById("h4001").innerText="No. of Rounds: "+count;
+    document.getElementById("h4001").innerText=" 👉 No. of Rounds: "+count;
 
 }
